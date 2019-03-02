@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #bbb;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.button--base {
+	font-size: 30px;
+}
+
+.button-number {
+	background-color: white;
+	border: 2px solid white;
+	font-weight: bold;
+	&:hover {
+		border: 2px solid white;
+		background-color: gray;
+	}
+}
+
+.button-operation {
+	background-color: lightgray;
+	border: 2px solid lightgray;
+	&:hover {
+		border: 2px solid lightcyan;
+		background-color: lightblue;
+	}
+}
+
+.button-option {
+	border: 2px solid lightgray;
+	background-color: lightgray;
+
+	&:hover {
+		border: 2px solid lightgray;
+		background-color: gray;
+	}
+}
+
+.calculator {
+	@media (max-width: 1024px) {
+		width: 90vw;
+	}
+	@media (min-width: 1025px) {
+		width: 50vw;
+	}
+	height: 50vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 3px;
+	row-gap: 3px;
+}
+
+.container {
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.memory {
+	background-color: #454545;
+	color: white;
+	text-align: center;
+}
+
+.visor {
+	display: block;
+	word-wrap: break-word;
+	font-size: 40px;
+	text-align: right;
+	padding-right: 10px;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	background-color: #545454;
+	color: white;
+}
