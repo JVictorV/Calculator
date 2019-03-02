@@ -1,36 +1,40 @@
 {
-  "name": "calculator",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "node-sass": "^4.11.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "7.11.0",
-    "prettier": "^1.16.4"
-  }
+	"name": "calculator",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://jvictorv.github.io/calculator",
+	"dependencies": {
+		"node-sass": "^4.11.0",
+		"react": "^16.8.3",
+		"react-dom": "^16.8.3",
+		"react-scripts": "2.1.5"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"lint": "./node_modules/.bin/eslint",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"devDependencies": {
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-plugin-import": "2.14.0",
+		"eslint-plugin-jsx-a11y": "6.1.1",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-react": "7.11.0",
+		"gh-pages": "^2.0.1",
+		"prettier": "^1.16.4"
+	}
 }
